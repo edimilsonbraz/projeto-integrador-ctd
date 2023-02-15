@@ -11,7 +11,7 @@
 
 .register form
 {
-	width: 500px;
+	width: 100%;
 	height: 450px;
 	display: flex;
 	flex-direction: column;
@@ -72,12 +72,40 @@
 	position: absolute;
 
 	transform: translateY(-50%);
-	background: url('../assets/visibility.svg');
+	background: url('../../assets/visibility.svg');
 	background-size: cover;
 }
 
 #icon.hide
 {
-	background: url('../assets/visibility-off.svg');
+	background: url('../../assets/visibility-off.svg');
 	background-size: cover;
+}
+
+/*Responsividade*/
+@media screen and (max-width: 400px)
+{
+
+	.register 
+	{
+		width: 350px;
+	}
+
+	.register div:nth-child(1) 
+	{
+		flex-direction: column;
+		height: 108px;
+	}
+
+	.register div:nth-child(1) input:nth-child(n + 2)
+	{
+		width: 100%;
+	}
+
+	#icon
+	{
+		margin: -20px 0 0 320px ;
+	}
+
+	
 }
