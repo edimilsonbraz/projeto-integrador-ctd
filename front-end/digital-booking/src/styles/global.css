@@ -15,10 +15,6 @@
 	--secondary: #DFE4EA;
 }
 
-body {
-	
-}
-
 a {
 	color: inherit; /*Herda a cor dos textos */
 	text-decoration: none;

@@ -1,7 +1,23 @@
-
+import { useRef} from "react";
 
 export function Register ()
 {
+  const passwRef = useRef();
+  const iconRef = useRef();
+
+  const showHide = () =>
+  {
+    if(passwRef.current.type === 'password')
+    {
+      passwRef.current.type = "text";
+      iconRef.current.className = "hide";
+    }else
+    {
+      passwRef.current.type = "password";
+      iconRef.current.className = "";
+    }
+  }
+
   return (
     <div className="register">
       <h1>Criar conta</h1>
@@ -22,8 +38,8 @@ export function Register ()
         </div>
         <div>
           <label htmlFor="password">Senha</label>
-          <input type="password" name="" id="password" />
-          <div id="icon" ></div>
+          <input ref={passwRef} type="password" name="" id="password" />
+          <div ref={iconRef} id="icon" onClick={showHide}></div>
         </div>
         <div>
           <label htmlFor="confirmpassword">Confirmar Senha</label>
