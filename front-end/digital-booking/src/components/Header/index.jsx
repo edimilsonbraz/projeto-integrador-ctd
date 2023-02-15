@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import logo1 from '../../assets/logo1.svg'
 
-import styles from './styles.css'
+import './styles.css'
 
 export function Header() {
   return (
@@ -14,8 +14,12 @@ export function Header() {
       </div>
 
       <div className='headerButtons'>
-        <button>Criar conta</button>
-        <button>Iniciar sessão</button>
+        <NavLink to="/login" end title="Criar conta">
+          <button>Criar conta</button>
+        </NavLink>
+        <NavLink to="/register" end title="Iniciar sessão">
+          <button>Iniciar sessão</button>
+        </NavLink>
       </div>
     </div>
   )
