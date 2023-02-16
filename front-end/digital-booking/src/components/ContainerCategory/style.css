@@ -1,6 +1,6 @@
 .category /**/
 {
-    width: 90%;
+    width: 1230px;
     height: 320px;
     margin: 20px auto;
     display: flex;
@@ -16,25 +16,6 @@
 .category span
 {
     font-size: 0.75rem;
-}
-
-.card /**/
-{
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px #00000042;
-}
-
-.card img /*estilização de imagens de categorias*/
-{
-    width: 300px;
-    height: 200px;
-    border-radius: 10px 10px 0 0;
-
-}
-
-.card div:nth-child(2) /*definindo espaçamento do titulo*/
-{
-    padding: 10px;
 }
 
 .container-card

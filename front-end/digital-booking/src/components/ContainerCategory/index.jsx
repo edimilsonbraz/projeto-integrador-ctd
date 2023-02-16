@@ -1,6 +1,6 @@
 import './style.css';
 import categories from '../../../categories.json';
-import { Card } from './card';
+import { Card } from '../Card';
 
 export function ContainerCategory()
 {
