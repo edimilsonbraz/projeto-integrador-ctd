@@ -1,0 +1,36 @@
+{
+    "category": [
+        {
+            "img": "http://www.qualviagem.com.br/wp-content/uploads/2015/06/infinity-blue-beneficios.jpg",
+            "category": "Resort",
+            "title": "Resorts",
+            "location": "Salvador",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "found": 25424
+        },
+        {
+            "img": "https://pix10.agoda.net/hotelImages/124/1246280/1246280_16061017110043391702.jpg?ca=6&ce=1&s=1024x768",
+            "category": "Hotel",
+            "title": "Hoteis",
+            "location": "Rio de Janeiro",
+            "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+            "found": 12565
+        },
+        {
+            "img": "https://pesweb.azureedge.net/spimg/hotelbannerimages/pestana-sao-paulo-hotel-banner-01.jpg?scale=downscaleonly&encoder=freeimage&progressive=true&quality=50&w=1440&h=780&mode=crop&anchor=bottomcenter",
+            "category": "Apartamento",
+            "title": "Apartamentos",
+            "location": "Brasilia",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "found": 8952
+        },
+        {
+            "img": "https://viagemeturismo.abril.com.br/wp-content/uploads/2020/11/gettyimages-964872010.jpg?quality=70&strip=info&w=1024&resize=1200,800",
+            "category": "beira mar",
+            "title": "Beira Mar",
+            "location": "São Paulo",
+            "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45",
+            "found": 2565
+        }
+    ]
+}

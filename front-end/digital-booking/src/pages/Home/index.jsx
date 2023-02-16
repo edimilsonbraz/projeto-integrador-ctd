@@ -1,6 +1,9 @@
+import { ContainerCategory } from "../../components/ContainerCategory";
 
 export function Home() {
   return (
-    <h1>Page Home</h1>
+    <div>
+      <ContainerCategory></ContainerCategory>
+    </div>
   )
 }

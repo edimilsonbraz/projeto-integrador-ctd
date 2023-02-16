@@ -1,0 +1,36 @@
+.category /**/
+{
+    width: 90%;
+    height: 290px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card /**/
+{
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #00000042;
+}
+
+.card img /*estilização de imagens de categorias*/
+{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.card div:nth-child(2)
+{
+    padding: 10px;
+}
+
+.container-card
+{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
