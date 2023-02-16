@@ -5,7 +5,7 @@
   width: 100%;
   padding: 1rem 2.5rem;
 
-  background: var(--light);
+  /* background: var(--light); */
 }
 
 .headerImg {
@@ -33,7 +33,7 @@
   border-radius: 6px;
   background: var(--white);
   margin-right: 0.625rem;  
-  transition: all ease-in-out .5s;
+  transition: all ease-in-out .2s;
 }
 
 .headerButtons button:hover {

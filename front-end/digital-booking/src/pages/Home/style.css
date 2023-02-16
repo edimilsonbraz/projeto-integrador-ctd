@@ -1,0 +1,63 @@
+.containerBuscador {
+  background-color: var(--title);
+  padding: 2rem;
+  text-align: center;
+}
+
+.containerBuscador h1 {
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+
+.contentInputs {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0 12.25rem 1rem;
+}
+
+.contentInputs .inputs {
+  position: relative;
+  flex: 1;
+}
+
+.contentInputs .inputs label {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 26px;
+  left: 12px;
+}
+
+.contentInputs .inputs input {
+  width: 100%;
+  height: 3rem;
+  font-size: 0.875rem;
+  padding-left: 2.5rem;
+  border-radius: 6px;  
+}
+
+.contentInputs .inputs input::placeholder {
+  color: #7F7F7F;
+}
+
+.contentInputs svg {
+  color: #7F7F7F;
+}
+
+.contentInputs button {
+  width: 20%;
+  height: 3rem;
+  border: 1px solid transparent;
+  border-radius: 6px;
+
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--primary);
+  transition: all ease-in-out .2s;
+}
+
+.contentInputs button:hover {
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  background-color: var(--white);
+}
