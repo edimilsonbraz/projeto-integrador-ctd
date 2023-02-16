@@ -1,5 +1,7 @@
 package com.example.ProjetoIntegradorI.controllers;
 
+import com.example.ProjetoIntegradorI.exceptions.BadRequestException;
+import com.example.ProjetoIntegradorI.exceptions.ResourceNotFoundException;
 import com.example.ProjetoIntegradorI.models.UsuarioModel;
 import com.example.ProjetoIntegradorI.services.IBookingService;
 import com.example.ProjetoIntegradorI.services.impl.UsuarioServiceImpl;
