@@ -1,11 +1,21 @@
 .category /**/
 {
     width: 90%;
-    height: 290px;
-    margin: 0 auto;
+    height: 320px;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.category h1
+{
+    font-size: 1.5rem;
+}
+
+.category span
+{
+    font-size: 0.75rem;
 }
 
 .card /**/
@@ -22,7 +32,7 @@
 
 }
 
-.card div:nth-child(2)
+.card div:nth-child(2) /*definindo espaçamento do titulo*/
 {
     padding: 10px;
 }
