@@ -14,10 +14,10 @@ export function Header() {
       </div>
 
       <div className='headerButtons'>
-        <NavLink to="/login" end title="Criar conta">
+        <NavLink to="/register" end title="Criar conta">
           <button>Criar conta</button>
         </NavLink>
-        <NavLink to="/register" end title="Iniciar sessão">
+        <NavLink to="/login" end title="Iniciar sessão">
           <button>Iniciar sessão</button>
         </NavLink>
       </div>
