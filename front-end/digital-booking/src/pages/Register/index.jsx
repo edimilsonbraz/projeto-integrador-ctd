@@ -1,4 +1,5 @@
 import { useRef} from "react";
+import { Link } from "react-router-dom";
 import style from './style.css';
 
 export function Register ()
@@ -48,7 +49,7 @@ export function Register ()
         </div>
         <div>
           <button type="submit">Criar conta</button>
-          <span>Já tem uma conta? <a href="">Iniciar sessão</a></span>
+          <span>Já tem uma conta? <Link to="/login">Iniciar sessão</Link></span>
         </div>     
       </form>
     </div>
