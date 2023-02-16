@@ -1,0 +1,111 @@
+.login
+{
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.login form
+{
+	width: 100%;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.login div:nth-child(1) 
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.login div:nth-child(2) input:nth-child(n + 3) /*Define o width dos inputs nome e sobrenome*/
+{
+	width: 240px;
+}
+
+.login div:nth-child(3) /*Define a organização de display da div com botao submit*/
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.login div:nth-child(3) button /*Estilização do botao submit*/ 
+{
+	width: 50%;
+	height: 40px;
+	margin: 20px 0 10px 0;
+	background-color: var(--primary);
+	border: none;
+	border-radius: 6px;
+	color: white;
+	font-size: 15px;
+}
+
+.login input /*Estilização dos inputs*/
+{
+	width: 100%;
+	height: 40px;
+	border-radius: 6px;
+	border: none;
+	box-shadow: 1px 1px 5px #00000034;
+	padding: 5px;
+}
+
+.login a
+{
+	color: var(--primary);
+}
+
+#icon /*Estilização do icone de mostrar senha*/
+{
+	width: 20px;
+	height: 18px;
+	cursor: pointer;
+	margin: -20px 0 0 470px ;
+	position: absolute;
+
+	transform: translateY(-50%);
+	background: url('../../assets/visibility.svg');
+	background-size: cover;
+}
+
+#icon.hide
+{
+	background: url('../../assets/visibility-off.svg');
+	background-size: cover;
+}
+
+/*Responsividade*/
+@media screen and (max-width: 400px)
+{
+
+	.login
+	{
+		width: 350px;
+	}
+
+	.login div:nth-child(1) 
+	{
+		flex-direction: column;
+		height: 108px;
+	}
+
+	.login div:nth-child(1) input:nth-child(n + 2)
+	{
+		width: 100%;
+	}
+
+	#icon
+	{
+		margin: -20px 0 0 320px ;
+	}
+
+	
+}
