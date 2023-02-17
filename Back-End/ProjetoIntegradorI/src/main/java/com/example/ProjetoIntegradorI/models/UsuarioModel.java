@@ -15,7 +15,7 @@ import lombok.Setter;
 public class UsuarioModel {
 
     @Id
-    @SequenceGenerator(name = "Pessoa_sequence", sequenceName = "paciente_sequence")
+    @SequenceGenerator(name = "Usuario_sequence", sequenceName = "usuario_sequence")
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequence_generator")
 
     private Long id;
