@@ -14,7 +14,7 @@ export function ContainerCategory()
                 {
                     category.map(current =>
                         {
-                            return <Card img={current.img} title={current.title} number={current.found}></Card>
+                            return <Card key={current.title} img={current.img} title={current.title} number={current.found}></Card>
                         })
                 }
             </div>

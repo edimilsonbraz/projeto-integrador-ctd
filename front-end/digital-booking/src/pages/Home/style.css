@@ -12,6 +12,7 @@
 .contentInputs {
   display: flex;
   gap: 0.5rem;
+  align-items: center;
   margin: 0 12.25rem 1rem;
 }
 
@@ -28,6 +29,14 @@
 }
 
 .contentInputs .inputs input {
+  width: 100%;
+  height: 3rem;
+  font-size: 0.875rem;
+  padding-left: 2.5rem;
+  border-radius: 6px;  
+}
+
+.contentInputs .inputs .input {
   width: 100%;
   height: 3rem;
   font-size: 0.875rem;
