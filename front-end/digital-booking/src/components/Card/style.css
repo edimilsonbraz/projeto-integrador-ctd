@@ -82,6 +82,7 @@
     {
         width: 100%;
         background-color: rgba(0, 0, 0, 0.274);
+        border-radius: 10px 10px 0 0;
     }
 }
 
@@ -91,5 +92,10 @@
     {
         flex: 0 0 100%;
         margin: 5px;
+    }
+
+    .card div:nth-child(1) /*Estilização da imagem do card*/
+    {
+        background-size:cover;
     }
 }

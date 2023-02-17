@@ -1,5 +1,5 @@
 import { ContainerCategory } from "../../components/ContainerCategory";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLocationDot,
   faCalendarCheck
