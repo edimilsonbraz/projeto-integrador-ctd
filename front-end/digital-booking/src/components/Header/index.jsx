@@ -2,7 +2,8 @@ import { Link, NavLink } from 'react-router-dom'
 import logo1 from '../../assets/logo1.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faBars
+  faBars,
+  faXmark
 } from '@fortawesome/free-solid-svg-icons'
 
 import './styles.css'
@@ -34,7 +35,7 @@ export function Header() {
           </NavLink>
           <p>Sinta-se em casa</p>
         </div>
-        <button onClick={toggleMenu} className='menu-mobile-icon'><FontAwesomeIcon icon={faBars} /></button>
+        <button onClick={toggleMenu} className='menu-mobile-icon'>{openMenu ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}</button>
         <div className='headerButtons'>
           <NavLink to="/register" end title="Criar conta">
             <button>Criar conta</button>
