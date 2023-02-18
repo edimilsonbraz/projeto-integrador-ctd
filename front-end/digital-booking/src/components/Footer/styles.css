@@ -23,3 +23,19 @@
   height: 28px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 400px)
+{
+.containerFooter 
+{
+  
+  flex-direction: column;
+  height: 6rem;
+  width: 25rem;
+  
+}
+
+
+
+
+}
