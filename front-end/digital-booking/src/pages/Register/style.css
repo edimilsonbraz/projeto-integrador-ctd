@@ -8,6 +8,7 @@
 	justify-content: space-around;
 	align-items: center;
 	margin-top: 20px;
+	padding: 5px;
 }
 
 .register form
@@ -73,15 +74,19 @@
 	color: var(--primary);
 }
 
+.container-password
+{
+	position: relative;
+}
+
 #icon /*Estilização do icone de mostrar senha*/
 {
 	width: 20px;
 	height: 18px;
 	cursor: pointer;
-	margin: -20px 0 0 470px ;
 	position: absolute;
-
-	transform: translateY(-50%);
+	top: 40px;
+	right: 10px;
 	background: url('../../assets/visibility.svg');
 	background-size: cover;
 }
@@ -92,13 +97,18 @@
 	background-size: cover;
 }
 
+.input-error
+{
+	border: 1px solid red;
+}
+
 /*Responsividade*/
-@media screen and (max-width: 400px)
+@media screen and (max-width: 460px)
 {
 
 	.register 
 	{
-		width: 350px;
+		width: 90%
 	}
 
 	.register div:nth-child(1) 

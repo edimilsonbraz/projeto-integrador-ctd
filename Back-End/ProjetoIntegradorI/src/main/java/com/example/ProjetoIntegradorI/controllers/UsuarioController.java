@@ -30,18 +30,19 @@ public class UsuarioController {
     }
 
     // PUT OU UPDATE
-    @PutMapping("/dentista/alterar")
+    @PutMapping("/usuario/alterar")
     public ResponseEntity alterarUsuario(@RequestBody UsuarioModel usuarioModel) throws SQLException {
         return ResponseEntity.ok(usuarioService.alterar(usuarioModel));
     }
 
     // GET
-    @RequestMapping(value = "/usuarios", method = RequestMethod.GET, produces = "application/json")
+    @RequestMapping(value = "/usuario", method = RequestMethod.GET, produces = "application/json")
     public List<UsuarioModel> buscarTodos() throws SQLException {
         return usuarioService.buscarTodos();
     }
 
     // GET BY ID
+    @GetMapping("/usuario/{id}")
     public ResponseEntity<Optional<UsuarioModel>> buscarPorId(@PathVariable Long id) throws ResourceNotFoundException{
         try{
             Optional<UsuarioModel> usuarioModel = usuarioService.buscarPorId(id);
