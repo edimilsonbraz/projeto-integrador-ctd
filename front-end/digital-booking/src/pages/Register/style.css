@@ -42,11 +42,19 @@
 	width: 50%;
 	height: 40px;
 	margin: 20px 0 10px 0;
+	background-color: white;
+	border: var(--primary) 1px solid;
+	border-radius: 6px;
+	color: var(--primary);
+	font-size: 1rem;
+}
+
+.register div:nth-child(5) button:hover /*Estilização do botao submit*/ 
+{
 	background-color: var(--primary);
 	border: none;
 	border-radius: 6px;
 	color: white;
-	font-size: 1rem;
 }
 
 .register input /*Estilização dos inputs*/

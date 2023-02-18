@@ -7,10 +7,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import {
   faLocationDot,
-  faCalendarCheck
+  faCalendarCheck,
+  faStar
 } from '@fortawesome/free-solid-svg-icons'
 
 import './style.css'
+import { CardInline } from "../../components/CardInline";
 
 export function Home() {
   const [startDate, setStartDate] = useState(new Date());
@@ -42,13 +44,13 @@ export function Home() {
               {/* <FontAwesomeIcon icon={faCalendarCheck} /> */}
              
               <DatePicker
-              selectsRange={true}
-              startDate={startDate}
-              endDate={endDate}
-              onChange={onChange}
-              className="input"
-              dateFormat="dd/MM/yyyy"
-            />
+                selectsRange={true}
+                startDate={startDate}
+                endDate={endDate}
+                onChange={onChange}
+                className="input"
+                dateFormat="dd/MM/yyyy"
+              />
            
                 {/* <DatePicker
                 selectsRange={true}
@@ -63,7 +65,18 @@ export function Home() {
       </div>
       
 
-      <ContainerCategory></ContainerCategory>
+      <ContainerCategory />
+
+      <section className="containerRecomendacao">
+        <div className="contentRecomendacao">
+          <h2>Recomendações</h2>
+          
+          <div className="containerCard">
+            <CardInline />
+
+          </div>
+        </div>
+      </section>
     </>
   )
 }

@@ -70,3 +70,16 @@
   border: 1px solid var(--primary);
   background-color: var(--white);
 }
+
+/* ============================ */
+.contentRecomendacao {
+  max-width: 1250px;
+  margin: 0 auto 6rem;
+}
+
+.contentRecomendacao h2 {
+  margin-bottom: 2rem;
+}
+.containerCard {
+  display: flex;
+}

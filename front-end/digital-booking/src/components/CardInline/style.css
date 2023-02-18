@@ -1,0 +1,111 @@
+.containerCardInline {
+  box-shadow: 1px 1px 5px #00000059;
+  border-radius: 10px;
+  max-width: 50%;
+  margin-right: 1rem;
+}
+
+.contentCard {
+  display: flex;
+}
+
+.contentImage {
+  width: 50%;
+}
+
+.contentCard .contentImage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.contentCard .contentDescription {
+  width: 50%;
+  padding: 1rem 1rem 0px;
+}
+
+.contentCard .contentDescription .stars h3 {
+ margin-top: 0.5rem;
+}
+
+.contentCard .contentDescription .stars p {
+  display: inline;
+  color: var(--title);
+  margin-right: 0.5rem;
+}
+
+.contentDescription .contentAvaliation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentAvaliation .avaliation {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.contentAvaliation .avaliation > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  background: var(--title);
+}
+
+.contentAvaliation .avaliation span {
+  color: var(--white);
+}
+
+.contentAvaliation .avaliation p {
+  color: var(--text);
+  text-align: center;
+}
+
+.contentIcons {
+  margin-top: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.contentIcons > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.contentIcons svg {
+  width: 16px;
+  color: var(--title);
+}
+
+.contentIcons p {
+  margin-right: 0.875rem;
+}
+
+.contentText p {
+  margin-bottom: 1rem;
+}
+
+button {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 6px;
+  color: var(--white);
+  font-weight: bold;
+  background-color: var(--primary) ;
+  border: 1px solid transparent;
+  margin-bottom: 0.875rem;
+  transition: all ease-in-out .2s;
+}
+
+button:hover {
+  background: var(--white);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
