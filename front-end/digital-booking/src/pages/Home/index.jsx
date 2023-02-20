@@ -1,5 +1,5 @@
 import { useState } from "react";
-import DatePicker from "react-datepicker";
+
 import "react-datepicker/dist/react-datepicker.css";
 
 import { ContainerCategory } from "../../components/ContainerCategory";
@@ -43,14 +43,7 @@ export function Home() {
             {/* <label htmlFor="check-in"> */}
               {/* <FontAwesomeIcon icon={faCalendarCheck} /> */}
              
-              <DatePicker
-                selectsRange={true}
-                startDate={startDate}
-                endDate={endDate}
-                onChange={onChange}
-                className="input"
-                dateFormat="dd/MM/yyyy"
-              />
+
            
                 {/* <DatePicker
                 selectsRange={true}

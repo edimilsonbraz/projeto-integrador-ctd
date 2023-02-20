@@ -1,7 +1,7 @@
 .register
 {
 	width: 500px;
-	height: 500px;
+	min-height: 550px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
@@ -9,6 +9,11 @@
 	align-items: center;
 	margin-top: 20px;
 	padding: 5px;
+}
+
+.register h1
+{
+	margin-bottom: 20px ;
 }
 
 .register form
@@ -97,9 +102,29 @@
 	background-size: cover;
 }
 
-.input-error
+.container-error
 {
-	border: 1px solid red;
+	width: 100%;
+	height: auto;
+	background-color: rgba(255, 104, 104, 0.849);
+	border: 2px solid rgba(255, 48, 48, 0.849);
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	color: red;
+	border-radius: 5px;
+}
+
+.container-error li
+{
+	margin: 5px;
+	list-style: none;
+}
+
+.border-error
+{
+	border: 12px;
+	background-color: rgba(255, 109, 109, 0.589);
 }
 
 /*Responsividade*/
