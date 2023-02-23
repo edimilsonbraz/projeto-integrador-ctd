@@ -7,22 +7,27 @@ import { ContainerCategory } from '../../components/ContainerCategory'
 import { CardInline } from '../../components/CardInline'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import {
+  faLocationDot,
+  faCalendarCheck
+} from '@fortawesome/free-solid-svg-icons'
 
 import category from '../../../categories.json'
 import './style.css'
 
 export function Home() {
   const hotels = category.hotels
-  
-  const [startDate, setStartDate] = useState(new Date())
+
+  const [startDate, setStartDate] = useState(null)
   const [endDate, setEndDate] = useState(null)
 
-  function onChange(dates) {
-    const [start, end] = dates
-    setStartDate(start)
-    setEndDate(end)
-  }
+  // function onChange(dates) {
+  //   event.preventDefault()
+  //   const [start, end] = dates
+  //   setStartDate(start)
+  //   setEndDate(end)
+  //   console.log(startDate + '==>' + endDate)
+  // }
 
   return (
     <>
@@ -30,6 +35,7 @@ export function Home() {
         <h1>Buscar ofertas em hotéis, casas e muito mais</h1>
 
         <div className="containerGlobal contentInputs">
+          {/* <form action=""> */}
           <div className="inputs">
             <label htmlFor="destino">
               <FontAwesomeIcon icon={faLocationDot} />
@@ -38,21 +44,35 @@ export function Home() {
           </div>
 
           <div className="inputs">
-            {/* <label htmlFor="check-in"> */}
-            {/* <FontAwesomeIcon icon={faCalendarCheck} /> */}
-
             <DatePicker
-              selectsRange={true}
+              selected={startDate}
+              onChange={(date) => setStartDate(date)}
+              selectsStart
               startDate={startDate}
               endDate={endDate}
-              onChange={onChange}
               className="input"
               dateFormat="dd/MM/yyyy"
+              placeholderText="Check-in"
             />
 
+            <DatePicker
+              selected={endDate}
+              onChange={(date) => setEndDate(date)}
+              selectsEnd
+              startDate={startDate}
+              endDate={endDate}
+              minDate={startDate}
+              className="input"
+              dateFormat="dd/MM/yyyy"
+              placeholderText="Check-out"
+            />
+            <label htmlFor="check-out">
+              <FontAwesomeIcon icon={faCalendarCheck} />
+            </label>
           </div>
 
-          <button>Buscar</button>
+          <button type="submit">Buscar</button>
+          {/* </form> */}
         </div>
       </div>
 
@@ -69,7 +89,7 @@ export function Home() {
           <div className="containerCard">
             {hotels.map((item) => {
               return (
-                <CardInline 
+                <CardInline
                   key={item.title}
                   img={item.img}
                   star={item.star}
@@ -79,8 +99,7 @@ export function Home() {
                   description={item.description}
                 />
               )
-            })
-            }
+            })}
           </div>
         </div>
       </section>

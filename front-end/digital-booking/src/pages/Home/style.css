@@ -17,6 +17,7 @@
 
 .contentInputs .inputs {
   position: relative;
+  display: flex;
   flex: 1;
 }
 
@@ -62,6 +63,11 @@
   color: var(--white);
   background-color: var(--primary);
   transition: all ease-in-out .2s;
+}
+
+.contentInputs .react-datepicker__navigation {
+  width: 10%;
+  height: 2rem;
 }
 
 .contentInputs button:hover {
