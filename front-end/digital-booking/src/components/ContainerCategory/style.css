@@ -1,17 +1,8 @@
-.container
+.containerCategory
 {
-    width: 1000px;
-    height: 320px;
-    padding: 10px;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
     margin: 0 auto;
-}
-
-.container h1
-{
-    font-size: 1.8rem;
 }
 
 .container-card
@@ -22,7 +13,7 @@
 
 @media screen and (max-width: 1080px) {
 
-    .container
+    .containerCategory
     {
         width: 90%;
         height: auto;
@@ -35,7 +26,7 @@
 }
 
 @media screen and (max-width: 450px) {
-    .container h1
+    .containerCategory h2
     {
         font-size: 1.26rem;
         margin-bottom: 10px;

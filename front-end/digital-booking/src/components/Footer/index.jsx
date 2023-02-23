@@ -11,7 +11,7 @@ import './styles.css'
 export function Footer() {
   return (
     <div className="containerFooter">
-      <p>©2021 Digital Booking</p>
+      <p>©2023 Digital Booking</p>
       <div className="contentIcons">
         <FontAwesomeIcon icon={faFacebook} />
         <FontAwesomeIcon icon={faLinkedinIn} />

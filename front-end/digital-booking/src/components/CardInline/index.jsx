@@ -7,29 +7,26 @@ import {
 
 import './style.css'
 
-export function CardInline() {
+export function CardInline({img, title, star, numberAvaliation, textAvaliation, description}) {
   return (
     <>
       <div className="containerCardInline">
         <div className="contentCard">
           <div className="contentImage">
-            <img
-              src="https://images.trvl-media.com/lodging/1000000/80000/77900/77873/36834f1b.jpg?impolicy=resizecrop&rw=598&ra=fit"
-              alt=""
-            />
+            <img src={img} alt="" />
           </div>
           <div className="contentDescription">
             <div className="contentAvaliation">
               <div className="stars">
                 <p>Hotel</p>
-                <span>⭐⭐⭐⭐⭐</span>
-                <h3>Faial Prime Suíte</h3>
+                <span>{star}</span>
+                <h3>{title}</h3>
               </div>
               <div className="avaliation">
                 <div>
-                  <span>8</span>
+                  <span>{numberAvaliation}</span>
                 </div>
-                <p>Muito bom</p>
+                <p>{textAvaliation}</p>
               </div>
             </div>
 
@@ -43,10 +40,7 @@ export function CardInline() {
               <div></div>
             </div>
             <div className="contentText">
-              <p>
-                No coração de Faial Prime Suíte, desfrute de uma pousada
-                inspirada nas paixões de Florianópolis.
-              </p>
+              <p>{description}</p>
             </div>
             <div className="button">
               <button>Ver mais</button>
@@ -55,7 +49,7 @@ export function CardInline() {
         </div>
       </div>
 
-      <div className="containerCardInline">
+      {/* <div className="containerCardInline">
         <div className="contentCard">
           <div className="contentImage">
             <img
@@ -98,7 +92,7 @@ export function CardInline() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   )
 }

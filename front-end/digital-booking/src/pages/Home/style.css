@@ -13,7 +13,6 @@
   display: flex;
   gap: 0.5rem;
   align-items: center;
-  margin: 0 12.25rem 1rem;
 }
 
 .contentInputs .inputs {
@@ -71,6 +70,15 @@
   background-color: var(--white);
 }
 
+/* =============== */
+.caterory {
+  margin-bottom: 2rem;
+}
+
+.caterory h2 {
+  margin: 1.5rem 0;
+}
+
 /* ============================ */
 .contentRecomendacao {
   max-width: 1250px;
@@ -78,8 +86,9 @@
 }
 
 .contentRecomendacao h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
 }
 .containerCard {
   display: flex;
+  flex-wrap: wrap;
 }

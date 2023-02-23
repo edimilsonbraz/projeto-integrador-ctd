@@ -46,6 +46,13 @@ h3 {
 	font-size: 1.125rem;
 }
 
+.containerGlobal {
+	width: 100%;
+	max-width: 78rem;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 
 label
 {

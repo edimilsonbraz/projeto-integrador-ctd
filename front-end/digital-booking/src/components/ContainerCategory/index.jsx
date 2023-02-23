@@ -7,11 +7,10 @@ export function ContainerCategory() {
   const category = categories.category
 
   return (
-    <div className="container">
-      <h1>Buscar por tipo de acomodação</h1>
+    <div className="containerGlobal containerCategory">
+      
       <div className="container-card">
         {category.map((current) => {
-          console.log(current.img)
           return (
             <Card
               key={current.title}
