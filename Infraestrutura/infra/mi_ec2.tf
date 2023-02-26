@@ -1,6 +1,17 @@
-provider "aws" {
- region = var.my_region
+terraform {
+  required_version = ">= 0.12"
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "~> 4.56.0"
+    }
+  }
 }
+
+provider "aws" {
+  region = var.my_region
+}
+
 
 data "aws_ami" "ubuntu" {
   most_recent = true
@@ -24,6 +35,6 @@ resource "aws_instance" "backend" {
   associate_public_ip_address = var.enable_public_ip
 
   tags = {
-    Name = "T06DH-PI-GRUPO6${var.instance_name}"
+    Name = "T06DH-PI-GRUPO6-${var.instance_name}"
   }
 }
