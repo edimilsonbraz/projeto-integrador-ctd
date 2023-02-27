@@ -128,9 +128,7 @@
 }
 
 /*Responsividade*/
-@media screen and (max-width: 460px)
-{
-
+@media screen and (max-width: 528px) {
 	.register 
 	{
 		width: 90%
@@ -152,3 +150,4 @@
 		margin: -20px 0 0 320px ;
 	}
 }
+
