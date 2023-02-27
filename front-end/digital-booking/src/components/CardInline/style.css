@@ -1,7 +1,7 @@
 .containerCardInline {
   box-shadow: 1px 1px 5px #00000059;
   border-radius: 10px;
-  max-width: 49.3%;
+  max-width: 49%;
   margin-bottom: 1.5rem;
 }
 
@@ -113,3 +113,46 @@ button:hover {
   border: 1px solid var(--primary);
 }
 
+/* RESPONSIVIDADE TABLET */
+@media screen and (max-width: 1080px) {
+  .containerCardInline {
+    max-width: 46%;
+    margin: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 954px) {
+  .contentCard {
+    display: block;
+  }
+
+  .contentCard .contentImage {
+    width: 100%;
+    height: 220px;
+  }
+
+  .contentCard .contentDescription {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .containerCardInline {
+    max-width: 100%;
+    margin: 1rem;
+  }
+
+  .contentImage {
+    width: 100%;
+  }
+  
+  .contentCard .contentDescription {
+    width: 100%;
+  }
+}
+
+/* RESPONSIVIDADE MOBILE */
+@media screen and (max-width:450px) {
+  
+}

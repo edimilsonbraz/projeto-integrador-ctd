@@ -98,3 +98,72 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+/* REPONSIVIDADE TABLET */
+@media screen and (max-width: 1080px) {
+  .containerBuscador {
+    width: 100%;
+  }
+
+  .caterory h2 {
+    margin: 1rem;
+  }
+
+  .contentRecomendacao h2{
+    margin: 1rem;
+  }  
+}
+
+@media screen and (max-width: 799px) {
+  .containerCard {
+    display: block;
+  }
+
+  .contentCard .contentDescription {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width:750px) {
+  .containerBuscador h1 {
+    font-size: 1.75rem;
+  }
+
+  .contentInputs {
+    display: block;    
+  }
+
+  .contentInputs .input {
+    margin-top: 0.5rem;
+  }
+
+  .contentInputs .inputs label {
+    top: 30px;
+  }
+
+  .contentInputs button {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  
+}
+
+/* RESPONSIVIDADE MOBIEL */
+@media screen and (max-width:450px) {
+  .containerBuscador {
+    padding: 1rem;
+  }
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+}
+

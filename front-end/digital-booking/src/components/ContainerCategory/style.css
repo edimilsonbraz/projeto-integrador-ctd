@@ -22,13 +22,14 @@
     .container-card
     {
         flex-wrap: wrap;
+        padding: 1rem;
     }
 }
 
 @media screen and (max-width: 450px) {
-    .containerCategory h2
+    /* .containerCategory h2
     {
         font-size: 1.26rem;
         margin-bottom: 10px;
-    }
+    } */
 }
