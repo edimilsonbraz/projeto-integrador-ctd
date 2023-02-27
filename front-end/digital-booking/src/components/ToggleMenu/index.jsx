@@ -24,7 +24,6 @@ function ToggleMenu() {
                         <button><Link to={'/register'}>Criar conta</Link></button>
                         <button><Link to={'/login'}>Fazer login</Link></button>
                     </div>
-
                 </div>) : null
             }</>
     );
