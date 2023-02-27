@@ -18,8 +18,14 @@
     border-radius: 6px;
     font-size: 1.5rem;
     color: white;
-    position: fixed;
+    position: absolute;
     right: 20px;
+}
+
+.button-hamburguer-fixed
+{
+  position: fixed;
+  right: 20px;
 }
 
 .menu-mobile
@@ -65,6 +71,17 @@
 .menu-mobile button
 {
   width: 80%;
+}
+
+.icons-menu-mobile
+{
+  width: 100%;
+  position: absolute;
+  border: 1px solid red;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 1.875rem;
 }
 
 
