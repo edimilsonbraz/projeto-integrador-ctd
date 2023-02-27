@@ -99,6 +99,18 @@
   flex-wrap: wrap;
 }
 
+/* REPONSIVIDADE DESKTOP */
+@media screen and (max-width: 1262PX) {
+  .caterory {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .contentRecomendacao h2{
+    margin: 1rem;
+  }
+}
+
 /* REPONSIVIDADE TABLET */
 @media screen and (max-width: 1080px) {
   .containerBuscador {

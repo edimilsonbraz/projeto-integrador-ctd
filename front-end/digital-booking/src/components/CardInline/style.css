@@ -3,11 +3,14 @@
   border-radius: 10px;
   max-width: 49%;
   margin-bottom: 1.5rem;
+  margin-left: 0.2rem;
+
 }
 
 .containerCardInline:nth-child(odd) {
   margin-right: 1rem;
 }
+
 .contentCard {
   display: flex;
 }
@@ -111,6 +114,16 @@ button:hover {
   background: var(--white);
   color: var(--primary);
   border: 1px solid var(--primary);
+}
+
+/* REPONSIVIDADE DESKTOP */
+@media screen and (max-width: 1262PX) {
+  .containerCardInline {
+    max-width: 47%;
+    margin-left: 1rem;
+  }
+
+  
 }
 
 /* RESPONSIVIDADE TABLET */
