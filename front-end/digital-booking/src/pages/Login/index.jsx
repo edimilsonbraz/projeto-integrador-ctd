@@ -37,7 +37,7 @@ export function Login ()
 
         <div>
           <button type="submit">Iniciar</button>
-          <span>Não é cadastrado? <a href="">Criar conta</a></span>
+          <span>Não é cadastrado? <a href="/register">Criar conta</a></span>
         </div>     
         
       </form>
