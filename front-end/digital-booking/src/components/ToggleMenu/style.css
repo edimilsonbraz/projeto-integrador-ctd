@@ -1,0 +1,89 @@
+.button-hamburguer
+{
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+
+
+.button-hamburguer
+{
+    width: 50px;
+    height: 50px;
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 6px;
+    font-size: 1.5rem;
+    color: white;
+    position: fixed;
+    right: 20px;
+}
+
+.menu-mobile
+{
+  width: 50vw;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  padding-top: 100px;
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.822);
+  backdrop-filter: blur(20px);
+  z-index: 1;
+}
+
+.button-hamburguer:hover
+{
+    background-color: white;
+    color: var(--primary);
+}
+
+.menu-mobile a
+{
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-mobile div
+{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: flex-end;
+}
+
+.menu-mobile div, button
+{
+    margin: 10px 0;
+}
+
+.menu-mobile button
+{
+  width: 80%;
+}
+
+
+@media screen and (max-width:850px) {
+    
+  .headerButtons
+  {
+    display:none;
+  }
+
+  .button-hamburguer
+  {
+    display: block;
+    z-index: 2;
+  }
+
+  .menu-mobile
+  {
+    display: flex;
+  }
+  
+}

@@ -29,7 +29,7 @@ export function Login ()
           <input type="email" name="" id="email" />
         </div>
         
-        <div>
+        <div className="loginpassword">
           <label htmlFor="password">Senha</label>
           <input ref={passwRef} type="password" name="" id="password" />
           <div ref={iconRef} id="icon" onClick={showHide}></div>
