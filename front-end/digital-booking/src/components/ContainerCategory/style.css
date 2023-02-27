@@ -1,5 +1,6 @@
 .containerCategory
 {
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
     margin: 0 auto;

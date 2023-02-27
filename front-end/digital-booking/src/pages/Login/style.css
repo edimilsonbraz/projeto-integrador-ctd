@@ -77,6 +77,16 @@
 	background-size: cover;
 }
 
+.loginpassword
+{
+	position: relative;
+}
+
+.loginpassword div:nth-child(3)
+{
+	position: absolute;
+}
+
 #icon.hide
 {
 	background: url('../../assets/visibility-off.svg');
