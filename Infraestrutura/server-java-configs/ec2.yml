@@ -1,0 +1,42 @@
+- hosts: backends_servers
+  become: yes
+
+  vars:
+    service_name: bookingapp.service
+
+  tasks:   
+    - name: Executando um apt-get update
+      apt:
+        update_cache: true
+        
+    - name: instalando Java
+      apt:
+        name: openjdk-11-jdk
+        state: latest
+        install_recommends: no
+        update_cache: yes
+
+    - name: instalando APT Transport HTTPS
+      apt:
+        name: apt-transport-https
+        state: present
+
+    - name: Exibindo a versão do java
+      shell: java -version 2>&1 | grep version | awk '{print $3}' | sed 's/"//g'                                                                                                                                   
+      changed_when: false
+      register: java_result
+
+    - debug:
+       msg: "{{ java_result.stdout }}"
+
+
+    - name: Copiando o Service
+      copy:
+        src: "{{ service_name }}"
+        dest: "/etc/systemd/system/{{ service_name }}"
+
+    - name: Reiniciando o deamon-service
+      shell: sudo systemctl daemon-reload
+
+    - name: Registrando o service
+      shell: sudo systemctl enable "{{ service_name }}"
