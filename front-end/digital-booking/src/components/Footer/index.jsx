@@ -12,7 +12,7 @@ export function Footer() {
   return (
     <div className="containerFooter">
       <p>©2023 Digital Booking</p>
-      <div className="contentIcons">
+      <div className="contentIconsFooter">
         <FontAwesomeIcon icon={faFacebook} />
         <FontAwesomeIcon icon={faLinkedinIn} />
         <FontAwesomeIcon icon={faTwitter} />

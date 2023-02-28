@@ -13,14 +13,14 @@
   bottom: 0;
 }
 
-.contentIcons {
+.contentIconsFooter {
   display: flex;
   gap: 1.4rem;
 }
 
-.contentIcons svg {
-  width: 28px;
-  height: 28px;
+.contentIconsFooter svg {
+  width: 16px;
+  color: var(--title);
   cursor: pointer;
 }
 
@@ -30,8 +30,11 @@
 {
   
   flex-direction: column;
-  height: 4rem;
-  width: 25rem;
-  
+  height: 4.5rem;
+  width: 25rem;  
 }
+.containerFooter p {
+  margin-bottom: 0.5rem;
+}
+
 }
