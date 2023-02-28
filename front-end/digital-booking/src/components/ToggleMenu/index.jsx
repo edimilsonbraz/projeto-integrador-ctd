@@ -16,7 +16,7 @@ function ToggleMenu() {
 
     return (
         <>
-            <button onClick={toggleMenu} className='button-hamburguer'>{openMenu ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}</button>
+            <button onClick={toggleMenu} className={`button-hamburguer ${openMenu ? 'button-hamburguer-fixed' : ''}`}>{openMenu ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}</button>
             {openMenu ?
                 (<div className='menu-mobile'>
                     <div>
@@ -25,7 +25,8 @@ function ToggleMenu() {
                         <button><Link to={'/login'}>Fazer login</Link></button>
                     </div>
                 </div>) : null
-            }</>
+            }
+            </>
     );
 }
 
