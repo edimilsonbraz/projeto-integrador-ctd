@@ -96,10 +96,39 @@
 	position: absolute;
 }
 
+
+
 #icon.hide
 {
 	background: url('../../assets/visibility-off.svg');
 	background-size: cover;
+}
+
+
+.container-error
+{
+	width: 100%;
+	height: auto;
+	background-color: rgba(255, 104, 104, 0.849);
+	border: 2px solid rgba(255, 48, 48, 0.849);
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	color: red;
+	border-radius: 5px;
+}
+
+.container-error li
+{
+	margin: 5px;
+	color:white;
+	list-style: none;
+}
+
+.border-error
+{
+	border: 12px;
+	background-color: rgba(255, 109, 109, 0.589);
 }
 
 /*Responsividade*/
