@@ -15,7 +15,7 @@
 
 .contentIcons {
   display: flex;
-  gap: 1.875rem;
+  gap: 1.4rem;
 }
 
 .contentIcons svg {
@@ -30,7 +30,7 @@
 {
   
   flex-direction: column;
-  height: 6rem;
+  height: 4rem;
   width: 25rem;
   
 }

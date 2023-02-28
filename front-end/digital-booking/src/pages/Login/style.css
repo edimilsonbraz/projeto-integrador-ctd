@@ -42,11 +42,20 @@
 	height: 40px;
 	margin: 20px 0 10px 0;
 	background-color: var(--primary);
-	border: none;
+	border: var(--primary) 1px solid;
 	border-radius: 6px;
-	color: white;
-	font-size: 15px;
+	color: var(--white);
+	font-size: 1rem;
 }
+
+.login div:nth-child(3) button:hover /*Estilização do botao submit*/ 
+{
+	background-color: var(--white);
+	border: var(--primary) 1px solid;
+	border-radius: 6px;
+	color: var(--primary);
+}
+
 
 .login input /*Estilização dos inputs*/
 {
@@ -94,17 +103,13 @@
 }
 
 /*Responsividade*/
-@media screen and (max-width: 400px)
+@media screen and (max-width: 528px)
 {
 
-	.login
+	.login 
 	{
-		margin-left: 2rem ;
-		width: 21.875rem;
-		height: 21.875rem;
-		
+		width: 90%
 	}
-
 
 	.login div:nth-child(1) 
 	{
