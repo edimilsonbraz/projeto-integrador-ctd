@@ -1,12 +1,34 @@
-import { useRef} from "react";
-import style from './style.css';
+import { useRef, useState} from "react";
+import { Link } from "react-router-dom";
+import {checkEmail, checkPassword } from "../../Scripts/validateForm";
+import  './style.css';
+
 
 export function Login ()
 {
   const passwRef = useRef();
   const iconRef = useRef();
 
-  const showHide = () =>
+  const [email, setEmail] = useState('');
+
+
+  //Gerenciamento de erros do form com useState
+
+  const [password, setPassword] = useState(false);
+  const [emailError, setEmailError] = useState(false);
+
+  const handlerSubmit = (event) => //Evento de submit que faz validações dos campos input
+  {
+    event.preventDefault();
+
+    checkEmail(email) ? setEmailError(false) : setEmailError(true);
+    checkPassword(passwRef.current.value) ? setPassword(false) : setPassword(true);
+   
+
+  }
+
+
+  const showHide = () => //Função para visualização de senha do campo input
   {
     if(passwRef.current.type === 'password')
     {
@@ -19,6 +41,8 @@ export function Login ()
     }
   }
 
+ 
+
   return (
     <div className="login">
       <h1>Iniciar sessão</h1>
@@ -26,21 +50,27 @@ export function Login ()
 
         <div>
           <label htmlFor="email">E-mail</label>
-          <input type="email" name="" id="email" />
+          <input className={emailError ? 'border-error' : ''} type="email" name="" id="email" onChange={e => setEmail(e.target.value)} value={email}/>
         </div>
         
         <div className="loginpassword">
           <label htmlFor="password">Senha</label>
-          <input ref={passwRef} type="password" name="" id="password" />
+          <input className={password ? 'border-error' : ''} ref={passwRef} type="password" name="" id="password"/>
           <div ref={iconRef} id="icon" onClick={showHide}></div>
         </div>
 
         <div>
-          <button type="submit">Iniciar</button>
-          <span>Não é cadastrado? <a href="/register">Criar conta</a></span>
+          <button type="submit" onClick={handlerSubmit}>Iniciar</button>
+          <span>Não é cadastrado? <Link to="/register">Criar conta</Link></span>
         </div>     
-        
       </form>
+        { password || emailError ? <div className="container-error">
+          <ul>
+            {emailError ? <li>E-mail digitado não é válido</li> : ''}
+            {password ? <li>A senha deve ter mais de seis caracteres.</li> : ''}
+          </ul>
+        </div> : ''}
+
     </div>
   );
 }
