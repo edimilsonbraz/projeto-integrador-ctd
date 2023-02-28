@@ -1,0 +1,11 @@
+[Unit]
+Description=REST Service
+After=syslog.target
+
+[Service]
+User=ubuntu
+ExecStart=/usr/bin/java -jar /home/ubuntu/dhinfra-1.0-SNAPSHOT.jar
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target
