@@ -6,13 +6,13 @@ import {
   faInstagram
 } from '@fortawesome/free-brands-svg-icons'
 
-import './styles.css'
+import styles from './styles.module.css'
 
 export function Footer() {
   return (
-    <div className="containerFooter">
+    <div className={styles.containerFooter}>
       <p>©2023 Digital Booking</p>
-      <div className="contentIconsFooter">
+      <div className={styles.contentIconsFooter}>
         <FontAwesomeIcon icon={faFacebook} />
         <FontAwesomeIcon icon={faLinkedinIn} />
         <FontAwesomeIcon icon={faTwitter} />

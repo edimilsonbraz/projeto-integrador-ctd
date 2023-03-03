@@ -4,7 +4,7 @@
   max-width: 49%;
   margin-bottom: 1.5rem;
   margin-left: 0.2rem;
-
+  background-color: var(--white);
 }
 
 .containerCardInline:nth-child(odd) {
@@ -98,7 +98,7 @@
   margin-bottom: 1rem;
 }
 
-button {
+button.button {
   width: 100%;
   height: 2.5rem;
   border-radius: 6px;
@@ -106,11 +106,10 @@ button {
   font-weight: bold;
   background-color: var(--primary) ;
   border: 1px solid transparent;
-  /* margin-bottom: 0.875rem; */
   transition: all ease-in-out .2s;
 }
 
-button:hover {
+button.button:hover {
   background: var(--white);
   color: var(--primary);
   border: 1px solid var(--primary);

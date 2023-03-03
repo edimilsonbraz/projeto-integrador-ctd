@@ -1,15 +1,15 @@
-import './style.css'
-import '../../styles/global.css'
 import categories from '../../../categories.json'
 import { Card } from '../Card'
+
+import styles from './styles.module.css'
 
 export function ContainerCategory() {
   const category = categories.category
 
   return (
-    <div className="containerGlobal containerCategory">
+    <div className={styles.containerCategory}>
       
-      <div className="container-card">
+      <div className={styles.containerCard}>
         {category.map((current) => {
           return (
             <Card
@@ -17,8 +17,8 @@ export function ContainerCategory() {
               img={current.img}
               title={current.title}
               number={current.found}
-              className="card"
-            ></Card>
+              className={styles.card}
+            />
           )
         })}
       </div>
