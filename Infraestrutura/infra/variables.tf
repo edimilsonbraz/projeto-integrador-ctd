@@ -14,6 +14,6 @@ variable "enable_public_ip" {
  default = true
 }
 
-variable "my_subnet_id" {
+/* variable "my_subnet_id" {
  default = "subnet-03a654efe97445249"
-}
+} */
