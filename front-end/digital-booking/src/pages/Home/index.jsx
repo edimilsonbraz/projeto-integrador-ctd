@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import category from '../../../categories.json'
 
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
@@ -12,8 +13,7 @@ import {
   faCalendarCheck
 } from '@fortawesome/free-solid-svg-icons'
 
-import category from '../../../categories.json'
-import './style.css'
+import styles from './styles.module.css'
 
 export function Home() {
   const hotels = category.hotels
@@ -31,26 +31,26 @@ export function Home() {
 
   return (
     <>
-      <div className="containerBuscador">
+      <div className={styles.containerBuscador}>
         <h1>Buscar ofertas em hotéis, casas e muito mais</h1>
 
-        <div className="containerGlobal contentInputs">
+        <div className={`containerGlobal ${styles.contentInputs}`}>
           {/* <form action=""> */}
-          <div className="inputs">
+          <div className={styles.inputs}>
             <label htmlFor="destino">
               <FontAwesomeIcon icon={faLocationDot} />
             </label>
             <input type="text" id="destino" placeholder="Onde vamos?" />
           </div>
 
-          <div className="inputs">
+          <div className={styles.inputs}>
             <DatePicker
               selected={startDate}
               onChange={(date) => setStartDate(date)}
               selectsStart
               startDate={startDate}
               endDate={endDate}
-              className="input"
+              className={styles.inputDatePicker}
               dateFormat="dd/MM/yyyy"
               placeholderText="Check-in"
             />
@@ -62,7 +62,7 @@ export function Home() {
               startDate={startDate}
               endDate={endDate}
               minDate={startDate}
-              className="input"
+              className={styles.inputDatePicker}
               dateFormat="dd/MM/yyyy"
               placeholderText="Check-out"
             />
@@ -71,22 +71,22 @@ export function Home() {
             </label>
           </div>
 
-          <button type="submit">Buscar</button>
+          <button type="submit" className={styles.buttonBuscar}>Buscar</button>
           {/* </form> */}
         </div>
       </div>
 
-      <section className="containerGlobal caterory">
+      <section className={`containerGlobal ${styles.category}`}>
         <h2>Buscar por tipo de acomodação</h2>
 
         <ContainerCategory />
       </section>
 
-      <section className="containerRecomendacao">
-        <div className="contentRecomendacao">
+      <section className={styles.containerRecomendacao}>
+        <div className={styles.contentRecomendacao}>
           <h2>Recomendações</h2>
 
-          <div className="containerCard">
+          <div className={styles.containerCard}>
             {hotels.map((item) => {
               return (
                 <CardInline

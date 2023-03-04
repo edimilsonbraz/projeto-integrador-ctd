@@ -1,22 +1,24 @@
-import { Link, NavLink } from 'react-router-dom'
-import logo1 from '../../assets/logo1.svg'
+import { NavLink } from 'react-router-dom'
+import {ToggleMenu} from '../ToggleMenu';
 
-import './styles.css'
-import ToggleMenu from '../ToggleMenu';
+import styles from './styles.module.css'
+import logo1 from '../../assets/logo1.svg'
 
 export function Header() {
 
   return (
     <>
-      <div className="headerContainer">
-        <div className='headerImg'>
+      <div className={styles.headerContainer}>
+        <div className={styles.headerImg}>
           <NavLink to="/" end title="Home">
             <img src={logo1} alt="" />
           </NavLink>
           <p>Sinta-se em casa</p>
         </div>
-        <ToggleMenu></ToggleMenu>
-        <div className='headerButtons'>
+
+        <ToggleMenu />
+
+        <div className={styles.headerButtons}>
           <NavLink to="/register" end title="Criar conta">
             <button>Criar conta</button>
           </NavLink>

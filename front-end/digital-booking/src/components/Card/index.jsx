@@ -1,9 +1,9 @@
-import './style.css';
+import styles from './styles.module.css';
 
 export function Card(props)
 {
     return (
-        <div className="card">
+        <div className={styles.card}>
             <div style={{backgroundImage: `url(${props.img})`}}></div> 
             <div>   
                 <h1>{props.title}</h1>

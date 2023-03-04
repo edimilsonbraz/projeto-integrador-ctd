@@ -6,7 +6,7 @@
     margin: 0 auto;
 }
 
-.container-card
+.containerCard
 {
     display: flex;
     gap: 1rem
@@ -21,7 +21,7 @@
         height: auto;
     }
     
-    .container-card
+    .containerCard
     {
         flex-wrap: wrap;
         /* padding: 1rem; */
